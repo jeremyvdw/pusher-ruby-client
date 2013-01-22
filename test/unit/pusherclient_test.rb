@@ -1,4 +1,4 @@
-require File.dirname(File.expand_path(__FILE__)) + '/teststrap.rb'
+require File.dirname(File.expand_path(__FILE__)) + '/../teststrap.rb'
 require 'logger'
 
 describe "A PusherClient::Channels collection" do

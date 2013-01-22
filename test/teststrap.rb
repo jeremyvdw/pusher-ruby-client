@@ -9,6 +9,12 @@ rescue Bundler::BundlerError => e
 end
 require 'bacon'
 
+require 'simplecov'
+SimpleCov.start do
+  command_name 'test'
+  add_filter "/test/"
+end
+
 require File.dirname(__FILE__) + '/../lib/pusher-client.rb'
 
 TEST_APP_KEY = "TEST_APP_KEY"

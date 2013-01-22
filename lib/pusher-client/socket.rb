@@ -1,4 +1,4 @@
-require 'json'
+require 'multi_json'
 require 'hmac-sha2'
 require 'digest/md5'
 
@@ -27,7 +27,7 @@ module PusherClient
       @encrypted = options[:encrypted] || false
 
       bind('pusher:connection_established') do |data|
-        socket = JSON.parse(data)
+        socket = parser(data)
         @connected = true
         @socket_id = socket['socket_id']
         subscribe_all
@@ -38,6 +38,7 @@ module PusherClient
       end
 
       bind('pusher:error') do |data|
+        p "\n\nError: #{data.inspect}"
         PusherClient.logger.fatal("Pusher : error : #{data.inspect}")
       end
     end
@@ -187,7 +188,7 @@ module PusherClient
 
     def parser(data)
       begin
-        return JSON.parse(data)
+        return MultiJson.load(data)
       rescue => err
         PusherClient.logger.warn(err)
         PusherClient.logger.warn("Pusher : data attribute not valid JSON - you may wish to implement your own Pusher::Client.parser")

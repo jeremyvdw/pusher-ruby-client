@@ -9,6 +9,9 @@ mkmf.log
 test/rcov/*
 .project
 .bundle
+.rbx
+*.un~
+**/*.un~
 pkg/*
 run_example_playground
 examples/hello_pusher_playground.rb

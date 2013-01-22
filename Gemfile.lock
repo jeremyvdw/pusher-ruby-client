@@ -3,16 +3,36 @@ PATH
   specs:
     pusher-client (0.2.1)
       addressable (~> 2.3.1)
-      libwebsocket (= 0.1.0)
+      libwebsocket (~> 0.1.0)
+      multi_json (~> 1.5.0)
       ruby-hmac (~> 0.4.0)
 
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.3.1)
+    addressable (2.3.2)
     bacon (1.1.0)
-    libwebsocket (0.1.0)
+    git (1.2.5)
+    jeweler (1.8.4)
+      bundler (~> 1.0)
+      git (>= 1.2.5)
+      rake
+      rdoc
+    json (1.7.6)
+    json (1.7.6-java)
+    libwebsocket (0.1.7.1)
+      addressable
+      websocket
+    multi_json (1.5.0)
+    rake (10.0.3)
+    rdoc (3.12)
+      json (~> 1.4)
     ruby-hmac (0.4.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
+    websocket (1.0.6)
 
 PLATFORMS
   java
@@ -20,4 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   bacon
+  jeweler
   pusher-client!
+  rake
+  simplecov
