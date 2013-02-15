@@ -11,28 +11,28 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.3.2)
-    bacon (1.1.0)
+    bacon (1.2.0)
     git (1.2.5)
     jeweler (1.8.4)
       bundler (~> 1.0)
       git (>= 1.2.5)
       rake
       rdoc
-    json (1.7.6)
-    json (1.7.6-java)
+    json (1.7.7)
+    json (1.7.7-java)
     libwebsocket (0.1.7.1)
       addressable
       websocket
-    multi_json (1.5.0)
+    multi_json (1.5.1)
     rake (10.0.3)
-    rdoc (3.12)
+    rdoc (3.12.1)
       json (~> 1.4)
     ruby-hmac (0.4.0)
     simplecov (0.7.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
-    websocket (1.0.6)
+    websocket (1.0.7)
 
 PLATFORMS
   java
