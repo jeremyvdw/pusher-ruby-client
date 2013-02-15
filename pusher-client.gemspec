@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
   s.test_files = [
     "examples/hello_pusher.rb",
     "examples/hello_pusher_async.rb",
-    "test/pusherclient_test.rb",
+    "test/unit/pusherclient_test.rb",
     "test/teststrap.rb"
   ]
 
