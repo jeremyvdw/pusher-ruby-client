@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
     "lib/pusher-client/socket.rb",
     "lib/pusher-client/websocket.rb",
     "pusher-client.gemspec",
-    "test/pusherclient_test.rb",
+    "test/unit/pusherclient_test.rb",
     "test/test.watchr",
     "test/teststrap.rb"
   ]
