@@ -51,10 +51,10 @@ Gem::Specification.new do |s|
   current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
   s.specification_version = 3
 
-  s.add_runtime_dependency(%q<libwebsocket>, ["~> 0.1.0"])
+  s.add_runtime_dependency(%q<libwebsocket>, ["~> 0.1.7.1"])
   s.add_runtime_dependency(%q<ruby-hmac>, ["~> 0.4.0"])
   s.add_runtime_dependency(%q<addressable>, ["~> 2.3.1"])
-  s.add_runtime_dependency(%q<multi_json>, ["~> 1.5.0"])
+  s.add_runtime_dependency(%q<multi_json>, ["~> 1.6.1"])
   s.add_development_dependency(%q<bacon>, [">= 0"])
   s.add_development_dependency(%q<rake>, [">= 0"])
   s.add_development_dependency(%q<jeweler>, [">= 0"])
